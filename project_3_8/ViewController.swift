@@ -14,19 +14,50 @@ class ViewController: UIViewController {
     var count = 0.00
     var flg = 0
     @IBAction func plus(_ sender: Any) {
-        
+        flg=1
+        count=Double(sum.text!)!
+        sum.text=""
         
     }
     @IBAction func minus(_ sender: Any) {
+        flg=2
+        count=Double(sum.text!)!
+        sum.text=""
     
     }
     @IBAction func multiply(_ sender: Any) {
+        flg=3
+        count=Double(sum.text!)!
+        sum.text=""
     
     }
     @IBAction func divided(_ sender: Any) {
+        flg=4
+        count=Double(sum.text!)!
+        sum.text=""
     
     }
     @IBAction func equal(_ sender: Any) {
+        switch flg {
+        case 1:
+            var temp = Double()
+            temp=count+Double(sum.text!)!
+            sum.text="\(temp)"
+        case 2:
+            var temp = Double()
+            temp=count-Double(sum.text!)!
+            sum.text="\(temp)"
+        case 3:
+            var temp = Double()
+            temp=count*Double(sum.text!)!
+            sum.text="\(temp)"
+        case 4:
+            var temp = Double()
+            temp=count/Double(sum.text!)!
+            sum.text="\(temp)"
+        default:
+            print("wrong")
+        }
     
     }
     
