@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var sum: UITextField!
-    var count = 0.00
+    var count = 0.00     //定义
     var flg = 0
     @IBAction func plus(_ sender: Any) {
         flg=1
@@ -91,6 +91,12 @@ class ViewController: UIViewController {
     @IBAction func zero(_ sender: Any) {
         sum.text=sum.text!+"0"
     }
+    
+    @IBAction func clear(_ sender: Any) {
+        sum.text=""
+    }
+    
+    
     
     
     override func viewDidLoad() {

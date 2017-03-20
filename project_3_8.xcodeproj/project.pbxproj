@@ -193,6 +193,7 @@
 				TargetAttributes = {
 					E18E5DCB1E6FB82F00C63BA5 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = GD663P9WED;
 						ProvisioningStyle = Automatic;
 					};
 					E18E5DDF1E6FB82F00C63BA5 = {
@@ -412,11 +413,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GD663P9WED;
 				INFOPLIST_FILE = project_3_8/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "imnu.edu.cn.project-3-8";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -424,11 +427,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GD663P9WED;
 				INFOPLIST_FILE = project_3_8/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "imnu.edu.cn.project-3-8";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -505,6 +510,7 @@
 				E18E5DF61E6FB82F00C63BA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E18E5DF71E6FB82F00C63BA5 /* Build configuration list for PBXNativeTarget "project_3_8Tests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +519,7 @@
 				E18E5DF91E6FB82F00C63BA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E18E5DFA1E6FB82F00C63BA5 /* Build configuration list for PBXNativeTarget "project_3_8UITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +528,7 @@
 				E18E5DFC1E6FB82F00C63BA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
