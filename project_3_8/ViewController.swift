@@ -37,6 +37,7 @@ class ViewController: UIViewController {
         sum.text=""
     
     }
+    
     @IBAction func equal(_ sender: Any) {
         switch flg {
         case 1:
@@ -45,6 +46,7 @@ class ViewController: UIViewController {
             sum.text="\(temp)"
         case 2:
             var temp = Double()
+            
             temp=count-Double(sum.text!)!
             sum.text="\(temp)"
         case 3:
@@ -52,9 +54,22 @@ class ViewController: UIViewController {
             temp=count*Double(sum.text!)!
             sum.text="\(temp)"
         case 4:
-            var temp = Double()
+            var temp : Double
+            if sum.text=="0"{
+                sum.text="除数不能等于0"
+               
+            }
+                
+            else{
             temp=count/Double(sum.text!)!
+            
             sum.text="\(temp)"
+            }
+            
+            if sum.text=="除数不能等于0"{
+                sum.text=""
+                sleep(1/3)
+            }
         default:
             print("wrong")
         }
